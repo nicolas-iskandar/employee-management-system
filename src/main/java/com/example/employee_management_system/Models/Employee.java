@@ -1,5 +1,6 @@
 package com.example.employee_management_system.Models;
 
+import jakarta.persistence.Cacheable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
+@Cacheable
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)

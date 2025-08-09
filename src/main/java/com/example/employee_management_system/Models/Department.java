@@ -2,6 +2,7 @@ package com.example.employee_management_system.Models;
 
 import java.util.List;
 
+import jakarta.persistence.Cacheable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
+@Cacheable
 public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
